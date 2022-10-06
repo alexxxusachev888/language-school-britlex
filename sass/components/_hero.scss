@@ -1,0 +1,149 @@
+.hero {
+
+  &__container {
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-top: 50px;
+    }
+  }
+
+  &__wrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 992px) {
+      position: relative;
+    }
+  }
+
+  &__image {
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 575px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 358px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 460px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 220px;
+
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: $headers-black-color;
+
+    @media screen and (min-width: 575px) {
+      max-width: 100%;
+      margin-bottom: 25px;
+      font-size: 34px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 217px;
+      margin: 0;
+      margin-bottom: 25px;
+      font-size: 36px;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 992px) {
+      max-width: 290px;
+      font-size: 48px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    color: $text-grey-color;
+    text-align: center;
+
+    @media screen and (min-width: 575px) {
+      width: 486px;
+      margin: 0 auto;
+      margin-bottom: 35px;
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: 575px) {
+      margin-bottom: 0;
+      width: 338px;
+    }
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    @media screen and (min-width: 992px) {
+      margin-bottom: 30px;
+      width: 420px;
+      font-size: 20px;
+    }
+  }
+
+  &__button {
+    padding: 22px 0;
+    width: 100%;
+    font-size: 16px;
+
+    @media screen and (min-width: 575px) {
+      width: 305px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 19px 67px;
+      width: 236px;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 992px) {
+      display: inline-block;
+      width: fit-content;
+      font-size: 24px;
+      padding: 22px 78px;
+    }
+  }
+
+  &__icon {
+    display: none;
+    width: 100px;
+    height: 85px;
+
+    &-buld {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen and (min-width: 992px) {
+      position: absolute;
+      top: 100px;
+      right: 60px;
+      display: block;
+      animation-name: lightning;
+      animation-duration: 3000ms;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+
+  }
+}

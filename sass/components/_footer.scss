@@ -1,0 +1,83 @@
+.footer {
+  position: relative;
+
+  @media screen and (min-width: 575px) {
+    padding-top: 24px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 11px;
+
+    @media screen and (min-width: 575px) {
+      margin-left: auto;
+      list-style: disc;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 13px;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+
+  &__link {
+    color: inherit;
+  }
+
+  &__item:not(:first-child) {
+    @media screen and (min-width: 575px) {
+      margin-left: 25px;
+      list-style: disc;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      display: block;
+      margin: 0 auto;
+      height: 1px;
+      width: 510px;
+      background-color: #E5E5E5;
+
+      @media screen and (min-width: 575px) {
+        width: 510px;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: calc(768px - 64px);
+      }
+
+      @media screen and (min-width: 992px) {
+        width: calc(992px - 64px);
+      }
+    }
+
+    @media screen and (min-width: 575px) {
+      margin-bottom: 0;
+    }
+  }
+}

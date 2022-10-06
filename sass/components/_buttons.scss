@@ -1,0 +1,17 @@
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  color: $buttons-white-color;
+
+  border-radius: 5px;
+  border-color: transparent;
+  background: $buttons-bg-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+}

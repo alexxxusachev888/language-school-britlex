@@ -1,0 +1,122 @@
+.pricing {
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 60px;
+    }
+
+    @media screen and (min-width: 992px) {
+      gap: 50px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+
+    @media screen and (min-width: 575px) {
+      margin: 0 auto;
+      width: 394px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      flex-basis: calc((100% - 75px) / 3);
+    }
+  }
+
+  &__image {
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 575px) {
+      margin-bottom: 29px;
+      width: 394px;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 210px;
+    }
+
+    @media screen and (min-width: 992px) {
+      height: 245px;
+    }
+  }
+
+  &__subheader {
+    margin-bottom: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    color: $subheaders-grey-color;
+
+    @media screen and (min-width: 575px) {
+      margin-bottom: 23px;
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 22px;
+    }
+  }
+
+
+  &__descr {
+    margin-bottom: 33px;
+    line-height: 20px;
+    text-align: center;
+    color: $text-grey-color;
+
+    @media screen and (min-width: 575px) {
+      margin-bottom: 31px;
+    }
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  &__cost {
+    display: inline-block;
+    padding: 5px 15px;
+    text-align: center;
+
+    color: $price-color;
+
+    background: #EEEEEE;
+    border-radius: 5px;
+
+    @media screen and (min-width: 575px) {
+      font-size: 16px;
+    }
+  }
+
+  &__amount {
+    font-size: 18px;
+    color: $price-accent-color;
+
+    @media screen and (min-width: 575px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 24px;
+    }
+  }
+}

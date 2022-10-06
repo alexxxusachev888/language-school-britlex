@@ -1,0 +1,143 @@
+.header {
+
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 14px 29px 14px;
+
+    @media screen and (min-width: 575px) {
+      padding: 40px 50px 11px 32px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+  }
+
+  &__wrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: $background-color;
+    transition: display 250ms linear;
+
+    @media screen and (min-width: 992px) {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin-left: 167px;
+      background-color: $background-white-color;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  &__wrapper.is-open {
+    display: block;
+  }
+}
+
+.header__navigation {
+  &-list {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @media screen and (min-width: 992px) {
+      display: inline-flex;
+      flex-direction: row;
+      margin-bottom: 0;
+      gap: 30px;
+    }
+  }
+
+  &-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    color: $subheaders-grey-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      font-size: 16px;
+      text-decoration: underline;
+
+      & .header__navigation-icon {
+        fill: $accent-color;
+      }
+    }
+  }
+}
+
+.header__button {
+  padding: 12px 40px;
+
+  color: $text-black-color;
+  font-size: 18px;
+
+  border: 2px solid #263238;
+  border-radius: 5px;
+
+  @media screen and (min-width: 992px) {
+    margin-left: auto;
+    background-color: $background-white-color;
+  }
+
+  &-mobile {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: $background-white-color;
+  }
+}
+
+.header__icon {
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+
+}
+
+.header__icon-close {
+  display: none;
+}
+
+.header__button-mobile.is-open .header__icon-menu {
+  display: none;
+}
+
+.header__button-mobile.is-open .header__icon-close {
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .header__button-mobile {
+    display: none;
+  }
+
+  .header__icon-bulb {
+    display: block;
+  }
+}
