@@ -1,0 +1,12 @@
+.logo {
+  color: $headers-black-color;
+  font-size: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
+
+  &__accent {
+    color: $logo-accent-color;
+  }
+}
