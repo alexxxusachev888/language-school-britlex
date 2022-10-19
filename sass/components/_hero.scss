@@ -9,6 +9,10 @@
       justify-content: space-between;
       padding-top: 50px;
     }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+    }
   }
 
   &__wrapper {
@@ -36,6 +40,10 @@
 
     @media screen and (min-width: 992px) {
       width: 460px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 654px;
     }
   }
 
@@ -67,6 +75,13 @@
       max-width: 290px;
       font-size: 48px;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+      max-width: 368px;
+      font-weight: 600;
+      font-size: 64px;
+    }
   }
 
   &__descr {
@@ -96,6 +111,12 @@
       width: 420px;
       font-size: 20px;
     }
+
+    @media screen and (min-width: 992px) {
+      margin-bottom: 60px;
+      width: 540px;
+      font-size: 24px;
+    }
   }
 
   &__button {
@@ -121,12 +142,25 @@
       font-size: 24px;
       padding: 22px 78px;
     }
+
+    @media screen and (min-width: 1200px) {
+      padding: 23px 64px;
+
+      letter-spacing: 0.03em;
+      font-size: 36px;
+      font-weight: 400;
+    }
   }
 
   &__icon {
     display: none;
     width: 100px;
     height: 85px;
+
+    @media screen and (min-width: 1200px) {
+      width: 130px;
+      height: 130px;
+    }
 
     &-buld {
       width: 100%;
@@ -144,6 +178,11 @@
       animation-iteration-count: infinite;
     }
 
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      top: 70px;
+      right: 50px;
+    }
 
   }
 }

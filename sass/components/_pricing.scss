@@ -1,5 +1,11 @@
 .pricing {
 
+  &.section {
+    @media screen and (min-width: 1200px) {
+      padding-top: 130px;
+    }
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -12,6 +18,10 @@
 
     @media screen and (min-width: 992px) {
       gap: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 30px;
     }
   }
 
@@ -27,6 +37,12 @@
       display: flex;
       flex-direction: column;
       flex-basis: calc((100% - 75px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      flex-basis: calc((100% - 90px) / 3);
     }
   }
 
@@ -44,6 +60,11 @@
 
     @media screen and (min-width: 992px) {
       height: 245px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 30px;
+      height: none;
     }
   }
 
@@ -64,6 +85,13 @@
 
     @media screen and (min-width: 992px) {
       font-size: 22px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 48px;
     }
   }
 
@@ -86,6 +114,12 @@
     @media screen and (min-width: 992px) {
       font-size: 16px;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 35px;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &__cost {
@@ -100,6 +134,10 @@
 
     @media screen and (min-width: 575px) {
       font-size: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
     }
   }
 
@@ -116,6 +154,11 @@
     }
 
     @media screen and (min-width: 992px) {
+      font-size: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 21px;
       font-size: 24px;
     }
   }

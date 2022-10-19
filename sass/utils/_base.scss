@@ -68,6 +68,12 @@ address {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .section {
@@ -92,5 +98,16 @@ address {
 
   @media screen and (min-width: 992px) {
     font-size: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+    font-size: 48px;
+  }
+}
+
+.touppercase {
+  @media screen and (min-width: 1200px) {
+    text-transform: uppercase;
   }
 }

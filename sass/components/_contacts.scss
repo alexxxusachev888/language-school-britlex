@@ -6,11 +6,21 @@
       grid-template-rows: repeat(3, auto);
       column-gap: 36px;
     }
+
+    @media screen and (min-width: 1200px) {
+      column-gap: 130px;
+    }
   }
 
   &__header {
     @media screen and (min-width: 768px) {
       margin-bottom: 15px;
+      grid-area: 1 / 2 / 2 / 3;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 60px;
       grid-area: 1 / 2 / 2 / 3;
       text-align: left;
     }
@@ -34,7 +44,10 @@
 
     @media screen and (min-width: 992px) {
       max-width: 312px;
+    }
 
+    @media screen and (min-width: 1200px) {
+      max-width: 425px;
     }
   }
 
@@ -55,6 +68,12 @@
       margin-bottom: 35px;
       text-align: left;
       width: 420px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 625px;
     }
   }
 
@@ -106,9 +125,13 @@
     }
 
     @media screen and (min-width: 768px) {
-      border-radius: 10px;
       padding: 20px 25px;
       width: 283px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 20px 25px;
+      width: 425px;
     }
   }
 
@@ -117,6 +140,10 @@
 
     @media screen and (min-width: 575px) {
       font-size: 13px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
     }
   }
 
@@ -144,6 +171,16 @@
       padding: 21px 56px;
       width: 100%;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+      padding: 0 56px;
+      width: fit-content;
+
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.03em;
+    }
   }
 }
 
@@ -157,5 +194,10 @@
   @media screen and (min-width: 992px) {
     padding-top: 100px;
     padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 55px;
   }
 }

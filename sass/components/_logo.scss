@@ -6,6 +6,10 @@
     font-size: 30px;
   }
 
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
+
   &__accent {
     color: $logo-accent-color;
   }
